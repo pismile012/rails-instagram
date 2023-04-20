@@ -7,6 +7,12 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
+      #Custom user data
+      t.string :full_name
+      t.string :username
+      t.string :phonenumber
+
+
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
