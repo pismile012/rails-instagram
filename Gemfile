@@ -50,6 +50,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 gem 'bootstrap', '~> 5.2.3'
 gem "font-awesome-sass", "~> 6.4.0"
+gem 'activestorage-validator'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
