@@ -3,3 +3,6 @@ import { Turbo } from "@hotwired/turbo-rails"
 Turbo.session.drive = false
 import "controllers"
 import "bootstrap"
+import "filepond"
+import "custom/custom"
+import "filepond-plugin-image-preview"
