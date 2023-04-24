@@ -1,19 +1,22 @@
 <div class="container home-sections d-flex flex-row justify-content-center align-items-center">
   <div class="login-section pt-3">
 
-   <div class="card text-center pt-5 mx-auto" style="width: 23rem;">
+    <div class="card text-center pt-5 mx-auto" style="width: 23rem;">
       <%= image_tag 'logo.png', class: "card-img-top" %>
       <p class="w-75 fs-6 fw-bold text-secondary align-self-center mt-2"> Sign up to see photos and videos from your friends. </p>
-          <a href="#" class="d-block mt-4 text-decoration-none fw-bold bg-primary text-white rounded w-75 align-self-center p-1">
+
+      <a href="#" class="d-block mt-4 text-decoration-none fw-bold bg-primary text-white rounded w-75 align-self-center p-1">
         <%= image_tag("facebook.png", class:  "facebook") %>
         Log in with Facebook
       </a>
+
       <div class="d-flex align-items-center mt-4">
           <div class="line"></div>
           <h2 class="line-text">OR</h2>
           <div class="line"></div>
         </div>
-        <div class="card-body">
+
+      <div class="card-body">
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <div class="mb-3 mt-4">
             <%= f.email_field :email, class: "form-control", placeholder: "Phone number or email" %>
@@ -37,7 +40,8 @@
         <% elsif alert%>
           <p class="alert"><%= alert %></p>
         <%end%>
-        </div>
+
+      </div>
     </div>
 
     <div class="card text-center py-2 mt-3 mx-auto" style="width: 23rem;">
