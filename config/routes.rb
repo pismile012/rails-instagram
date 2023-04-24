@@ -6,9 +6,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-  
+
   post "toggle_like", to:  "likes#toggle_like", as: :toggle_like
-  
+
   resources :comments, only: [:create, :destroy]
   resources :users, only: [:show, :index]
 
@@ -18,4 +18,5 @@ Rails.application.routes.draw do
 
   post 'accept_follow', to: 'follows#accept_follow', as: :accept_follow
   delete 'decline_follow', to: 'follows#decline_follow', as: :decline_follow
+
 end
