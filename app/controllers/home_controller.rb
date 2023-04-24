@@ -11,6 +11,7 @@ class HomeController < ApplicationController
   end
 
   def set_suggestions
+    byebug
     @suggestions = [current_user.followers]
     [current_user.followers, current_user.followings].flatten.uniq.each do |f|
       @suggestions.append([f.followers, f.followings])
